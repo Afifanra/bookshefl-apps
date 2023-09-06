@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body, input, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input, button {
+    font-size: 14px;
+}
+
+.head_bar {
+    padding: 5px 40px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color:white;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.input_section {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: grey 2px 2px 5px;
+    max-height: 500px;
+}
+
+.input_section h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.input_section form  .input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.input_section form button {
+    background-color: #BA4D2E;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 500px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.input_section   form   .input   input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.input_section   form   .input   label {
+    font-weight: 500;
+}
+
+.input_section   form   .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section   form   .input_inline   label {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.search_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.search_section h2 {
+    font-weight: 700;
+}
+
+.search_section form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+    color: white;
+}
+
+.search_section form label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.search_section form button {
+    background-color: #BA4D2E;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.book_section {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+.book_shelf {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: grey 2px 2px 5px;
+}
+
+.book_shelf  h2 {
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.book_shelf   .book_list {
+    padding: 10px;
+}
+
+.book_shelf  .book_list  .book_item {
+    padding: 8px 16px 16px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: aliceblue;
+}
+
+.book_shelf   .book_list   .book_item   h3, p {
+    margin: 10px 0;
+}
+
+.book_shelf .book_list .book_item .action button {
+    border: 0;
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.book_shelf .book_list .book_item .action .green {
+    background-color: #117C2C;
+    color: white;
+    border-radius: 20px;
+    padding: 11px;
+}
+
+.book_shelf .book_list .book_item .action .red {
+    background-color: #C50A26;
+    color: white;
+    border-radius: 20px;
+    padding: 11px;
+}
+
+footer{
+    padding: 20px;
+    width: 100%;
+    color: white;
+    background-color: #BA4D2E;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and ( max-width: 1000px){
+    main {
+        flex-direction: column;
+    }
+    .book_section {
+        flex-direction: column;
+    }
+    #searchBook {
+        display: flex;
+        width: 400px;
+    }
+    #searchBook button{
+        padding: 10px;
+    }
+}
+
+@media screen and ( max-width: 768px){
+    .head_bar {
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+}

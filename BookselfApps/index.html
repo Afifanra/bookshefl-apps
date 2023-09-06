@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bookshelf Apps</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="head_bar">
+    <img src="assets/logo_books.png" alt="">
+    <h1 class="head_bar_title">Bookshelf Apps</h1>
+
+    <section class="search_section">
+      <form id="searchBook">
+        <input id="searchBookTitle" type="text" placeholder="Search: Harry Potter" style="width: 700px;">
+        <button id="searchSubmit" type="submit" style="width: 100px;">Search</button>
+      </form>
+    </section>
+
+  </header>
+  
+  <!-- Content -->
+  <main>
+
+    <section class="input_section">
+      <h2>Add New Book</h2>
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Title</label>
+          <input id="inputBookTitle" type="text" required placeholder="Ex: Harry Potter" style="margin-top: 10px;">
+        </div>
+
+        <div class="input">
+          <label for="inputBookAuthor">Author</label>
+          <input id="inputBookAuthor" type="text" required placeholder="Ex: JK Rowling" style="margin-top: 10px;">
+        </div>
+
+        <div class="input">
+          <label for="inputBookYear">Year</label>
+          <input id="inputBookYear" type="number" required placeholder="Ex: 2021" style="margin-top: 10px;">
+        </div>
+      
+        <div class="input_inline">
+          <label for="inputBookisCompleted" style="margin-top: 10px;">Finished Read</label>
+          <input id="inputBookisCompleted" type="checkbox" style="margin-top: 10px;">
+        </div>
+        
+        <button id="bookSubmit" type="submit">Add Book</button>
+      </form>
+    </section>
+
+  
+    <section class="search_book">
+      <section class="book_section">
+        <section class="book_shelf">
+          <h2>Not Finished Read</h2>
+          <div id="incompleteBookshelfList" class="book_list">
+          </div>
+        </section>
+
+        <section class="book_shelf">
+          <h2>Finished Read</h2>
+          <div id="completeBookshelfList" class="book_list">
+          </div>
+        </section>
+      </section>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Copyright &copy;2023 Bookshelf APPS
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
